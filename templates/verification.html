@@ -1,0 +1,22 @@
+html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification</title>
+
+</head>
+
+<body>
+    <CENTER>
+        <h1>OTP</h1>
+        <form action="{{url_for('otp',username=username,mobile=mobile,email=email,address=address,password=password,otp=otp)}}" method="POST">
+            <label for=""> Enter OTP:</label>
+            <input type="text" name="uotp"><BR>
+            
+            <button>submit</button>
+        </form>
+    </CENTER>
+</body>
+
+</html>
